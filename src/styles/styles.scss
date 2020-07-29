@@ -1,0 +1,76 @@
+
+
+body {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec,
+     #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+    font-family: sans-serif;
+
+
+}
+
+h1 {
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 2px;
+  /* shorthand */
+    -webkit-text-stroke: 2px #000;
+  /* color del texto */
+    -webkit-text-fill-color: #fff;
+    text-align: center;
+    font-size: 70px;
+
+}
+
+h2 {
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 2px;
+  /* shorthand */
+    -webkit-text-stroke: 2px #000;
+  /* color del texto */
+    -webkit-text-fill-color: #fff;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+article img {
+    --size: 4.5rem;
+    width: var(--size);
+    height: var(--size);
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: var(--spacing);
+    text-align: center;
+  }
+
+
+
+  button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  button {
+    $color: #F23E3E ;
+    color: #fff;
+    background-color: $color;
+    margin-right: var(--spacing);
+
+    &:hover {
+      background-color: darken($color, 10);
+    }
+  }
+
+
+  .developers,
+  .Frontend,
+  .backend,
+  .Graphic,
+  .TeamLeader,
+  .Tester {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s;
+  }
